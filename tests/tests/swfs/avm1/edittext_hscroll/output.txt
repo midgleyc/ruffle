@@ -1,0 +1,22 @@
+// text field with width 100
+// text: A test for hscroll.
+// title_txt.maxhscroll
+0
+// title_txt.hscroll = -10
+0
+// title_txt.hscroll = 10
+0
+// text: A long enough test for hscroll.
+// title_txt.maxhscroll
+49
+// title_txt.hscroll = -10
+0
+// title_txt.hscroll = 10
+10
+// title_txt.hscroll = 100
+49
+// title_txt.hscroll = null
+0
+// title_txt.hscroll = undefined
+0
+
