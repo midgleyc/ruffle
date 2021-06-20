@@ -1,5 +1,5 @@
-// text field with width 100
-// text: 
+// text field with width 10
+// text: 1
 // title_txt.maxhscroll
 0
 // title_txt.hscroll = -10
