@@ -99,4 +99,5 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy: *strategy
 
-    steps: []
+    steps:
+      - uses: actions/checkout@v2
