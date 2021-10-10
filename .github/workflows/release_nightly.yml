@@ -327,6 +327,7 @@ jobs:
           git commit --amend -m "Nightly build ${{ needs.create-nightly-release.outputs.date }}"
 
       - name: Push web demo
+        if: github.repository == 'ruffle-rs/ruffle'
         uses: ad-m/github-push-action@master
         with:
           repository: ruffle-rs/demo
@@ -360,6 +361,7 @@ jobs:
           git commit --amend -m "Nightly build ${{ needs.create-nightly-release.outputs.date }}"
 
       - name: Push JS docs
+        if: github.repository == 'ruffle-rs/ruffle'
         uses: ad-m/github-push-action@master
         with:
           repository: ruffle-rs/js-docs
