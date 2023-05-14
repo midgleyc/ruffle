@@ -1624,6 +1624,17 @@ export class RufflePlayer extends HTMLElement {
         if (this.swfUrl) {
             result += `SWF URL: ${this.swfUrl}\n`;
         }
+        if (this.loadedConfig) {
+            const params = sanitizeParameters(this.loadedConfig.parameters);
+            let paramText = "";
+            for (const p in params) {
+                paramText += `  ${p}: ${params[p]}\n`;
+            }
+            if (paramText !== "") {
+                result += "Flash Vars:\n";
+                result += paramText;
+            }
+        }
 
         result += "\n# Browser Info\n";
         result += `User Agent: ${window.navigator.userAgent}\n`;
